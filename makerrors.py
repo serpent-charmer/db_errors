@@ -53,7 +53,7 @@ for p in document.paragraphs:
             
             opt = document.paragraphs[idx].text
             
-            report += ('\tДелаем ошибку в %d:\n\t%s...' % (num, opt[:70].rstrip(' '))) + '\n'
+            report += ('*Делаем ошибку в %d:\n\t%s...' % (num, opt[:70].rstrip(' '))) + '\n'
             
             try:
                 parts = 0
