@@ -46,7 +46,7 @@ for p in document.paragraphs:
         output_run.font.color.rgb = run.font.color.rgb
         if 'бал' in run.text:
             num = int(run.text.split('.')[0])
-            output_run.text = run.text.split(')')[1]
+            output_run.text = run.text.split(')', 1)[1]
             
             if not num in error_seq:
                 continue
